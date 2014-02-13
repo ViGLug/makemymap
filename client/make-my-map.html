@@ -1,0 +1,21 @@
+<head>
+  <title>make-my-map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  {{> maptemplate}}
+  {{> buttons}}
+</body>
+
+<template name="maptemplate">
+  {{#constant}}
+  <div id="map"></div>
+  {{/constant}}
+</template>
+
+<template name="buttons">
+<div style="position: absolute; text-align: center; left: 0px; right: 0px; bottom: 25px;">
+<button type="button" class="btn btn-default btn-lg" id="position">Trova la mia posizione</button>
+</div>
+</template>
